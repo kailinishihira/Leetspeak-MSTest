@@ -6,21 +6,46 @@ namespace Leetspeak.Models
   public class LeetspeakTranslator
   {
     private string _inputWord;
-    private static List<string>
+    private static List<string> _letters = new List<string> {};
+    private static List<string> _converted = new List<string> {};
 
     public LeetspeakTranslator(string inputWord)
     {
       _inputWord = inputWord;
+      _letters.Add(_inputWord);
     }
 
-    public string GetInputWord()
+    public List<string> ChangeLetter()
     {
-      return _inputWord;
+      char[] leetArray = _letters[0].ToCharArray();
+      for(int i = 0; i < leetArray.Length; i++)
+      {
+        if (leetArray[i] == 'e' || leetArray[i] == 'E')
+        {
+          leetArray[i] = '3';
+        } else if (leetArray[i] == 'o' || leetArray[i] == 'O')
+        {
+          leetArray[i] = '0';
+        } else if (leetArray[i] == 'I')
+        {
+          leetArray[i] = '1';
+        } else if (leetArray[i] == 't' || leetArray[i] == 'T')
+        {
+          leetArray[i] = '7';
+        } else if ((leetArray[0] != 's' || leetArray[0] != 'S') && (leetArray[i] == 's' || leetArray[i] == 'S'))
+        {
+          leetArray[i] = 'z';
+        }
+      }
+      string result = string.Join("", leetArray);
+      _converted.Add(result);
+      return _converted;
     }
 
-    public string ChangeLetter()
+    public static void ClearAll()
     {
-      return _inputWord;
+      _letters.Clear();
+      _converted.Clear();
     }
   }
 }
