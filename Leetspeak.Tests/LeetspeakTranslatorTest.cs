@@ -46,7 +46,6 @@ namespace Leetspeak.Tests
 
       //Act
       LeetspeakTranslator newWord = new LeetspeakTranslator("If");
-
       List<string> actual = newWord.ChangeLetter();
 
       //Assert
@@ -61,7 +60,6 @@ namespace Leetspeak.Tests
 
       //Act
       LeetspeakTranslator newWord = new LeetspeakTranslator("at");
-
       List<string> actual = newWord.ChangeLetter();
 
       //Assert
@@ -76,7 +74,6 @@ namespace Leetspeak.Tests
 
       //Act
       LeetspeakTranslator newWord = new LeetspeakTranslator("as");
-
       List<string> actual = newWord.ChangeLetter();
 
       //Assert
@@ -87,11 +84,10 @@ namespace Leetspeak.Tests
     public void ChangeLetter_FirstLetterSNoChange_S()
     {
       //Arrange
-      List<string> expected = new List<string> {"say"};
+      List<string> expected = new List<string> {"zay"};
 
       //Act
       LeetspeakTranslator newWord = new LeetspeakTranslator("say");
-
       List<string> actual = newWord.ChangeLetter();
 
       //Assert

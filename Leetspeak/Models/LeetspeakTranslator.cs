@@ -32,7 +32,7 @@ namespace Leetspeak.Models
         } else if (leetArray[i] == 't' || leetArray[i] == 'T')
         {
           leetArray[i] = '7';
-        } else if ((leetArray[0] != 's' || leetArray[0] != 'S') && (leetArray[i] == 's' || leetArray[i] == 'S'))
+        } else if (leetArray[i] == 's' || leetArray[i] == 'S')
         {
           leetArray[i] = 'z';
         }
