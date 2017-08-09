@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+<h1>Leetspeak Translator</h1>
+<ul>
+<li>The letter "e" should be replaced with "3".</li>
+<li>The letter "o" should be replaced with "0".</li>
+<li>The capital letter (not the lower case), "I", should be replaced with "1".</li>
+<li>The letter "t" should be replaced with "7".</li>
+<li>All instances of "s" should be replaced with "z".</li>
+</ul>
+
+<form action="/leet/translate" method="post">
+  <label for="input-word">Enter a word: </label>
+  <input id="input-word" name="input-word" class="form-group" type="text">
+  <button type="submit">Translate</button>
+</form>

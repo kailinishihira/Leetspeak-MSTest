@@ -15,6 +15,12 @@ namespace Leetspeak.Models
       _letters.Add(_inputWord);
     }
 
+    public string GetInputWord()
+    {
+      return _inputWord;
+    }
+
+
     public List<string> ChangeLetter()
     {
       char[] leetArray = _letters[0].ToCharArray();
@@ -32,7 +38,7 @@ namespace Leetspeak.Models
         } else if (leetArray[i] == 't' || leetArray[i] == 'T')
         {
           leetArray[i] = '7';
-        } else if (leetArray[i] == 's' || leetArray[i] == 'S')
+        } else if (leetArray[i] == 'S' || leetArray[i] == 's')
         {
           leetArray[i] = 'z';
         }

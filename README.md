@@ -15,10 +15,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 |3.| Letter "I" replaced with "1"  | "If"  |  "1f" |
 |4.| Letter "t" replaced with "7"  | "at"  |  "a7" |
 |5.| Letter "s" replaced with "z" | s | z |
-|6.| If the first letter of a word is "s", it will not be changed  | say  | say  |
-|7.| Sample  | "Don't you love these 'String' exercises? I do!" | "D0n'7 y0u l0v3 7h3z3 'S7ring' 3x3rciz3z? 1 d0!"  |
 
-|8.|   |   |   |
 
 
 

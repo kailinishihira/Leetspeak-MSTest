@@ -27,10 +27,10 @@ namespace Leetspeak.Tests
     public void ChangeLetter_OToZero_Zero()
     {
       //Arrange
-      List<string> expected = new List<string> {"f0r"};
+      List<string> expected = new List<string> {"n30n"};
 
       //Act
-      LeetspeakTranslator newWord = new LeetspeakTranslator("for");
+      LeetspeakTranslator newWord = new LeetspeakTranslator("neon");
 
       List<string> actual = newWord.ChangeLetter();
 
@@ -42,10 +42,10 @@ namespace Leetspeak.Tests
     public void ChangeLetter_ItoOne_One()
     {
       //Arrange
-      List<string> expected = new List<string> {"1f"};
+      List<string> expected = new List<string> {"1nf3ri0r"};
 
       //Act
-      LeetspeakTranslator newWord = new LeetspeakTranslator("If");
+      LeetspeakTranslator newWord = new LeetspeakTranslator("Inferior");
       List<string> actual = newWord.ChangeLetter();
 
       //Assert
@@ -56,10 +56,10 @@ namespace Leetspeak.Tests
     public void ChangeLetter_TToSeven_Seven()
     {
       //Arrange
-      List<string> expected = new List<string> {"a7"};
+      List<string> expected = new List<string> {"1n73ri0r"};
 
       //Act
-      LeetspeakTranslator newWord = new LeetspeakTranslator("at");
+      LeetspeakTranslator newWord = new LeetspeakTranslator("Interior");
       List<string> actual = newWord.ChangeLetter();
 
       //Assert
@@ -70,10 +70,10 @@ namespace Leetspeak.Tests
     public void ChangeLetter_SToZ_Z()
     {
       //Arrange
-      List<string> expected = new List<string> {"az"};
+      List<string> expected = new List<string> {"1n73ri0rz"};
 
       //Act
-      LeetspeakTranslator newWord = new LeetspeakTranslator("as");
+      LeetspeakTranslator newWord = new LeetspeakTranslator("Interiors");
       List<string> actual = newWord.ChangeLetter();
 
       //Assert
@@ -84,10 +84,10 @@ namespace Leetspeak.Tests
     public void ChangeLetter_FirstLetterSNoChange_S()
     {
       //Arrange
-      List<string> expected = new List<string> {"zay"};
+      List<string> expected = new List<string> {"z007z"};
 
       //Act
-      LeetspeakTranslator newWord = new LeetspeakTranslator("say");
+      LeetspeakTranslator newWord = new LeetspeakTranslator("Soots");
       List<string> actual = newWord.ChangeLetter();
 
       //Assert
